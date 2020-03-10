@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { useCacheValue } from 'react-cache'
+import { useCacheValue } from "../../../dist";
 
 const Address = ({name}) => {
   const [street, setStreet] = useCacheValue(`${name}.street`)
@@ -31,10 +30,6 @@ const Address = ({name}) => {
       <input type='text' value={postcode} onChange={(e) => setPostcode(e.target.value)} />
     </label>
   </div>)
-}
-
-Address.propTypes = {
-  name: PropTypes.string
 }
 
 export default Address

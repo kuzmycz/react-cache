@@ -1,6 +1,6 @@
 import React  from 'react'
 
-import {Cache, LogCache} from 'react-cache'
+import {Cache, LogCache} from "../dist";
 import Address from './components/address/address.component'
 
 const App = () => {

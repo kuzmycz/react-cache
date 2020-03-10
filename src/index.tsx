@@ -156,6 +156,18 @@ export type LogCacheProps = {
   display: boolean
 };
 
+const deepCopy = (obj: any): any => {
+  if (Array.isArray(obj)) {
+    return [...obj];
+  } else if (typeof obj === 'object') {
+    let copy: any = {};
+    Object.keys(obj).forEach(key => copy[key] = deepCopy(obj[key]));
+    return copy;
+  } else {
+    return obj;
+  }
+};
+
 export const LogCache = ({display= true}: LogCacheProps) => {
   const cache = useContext(CacheContext);
   const [value, setValue] = useState(cache.values);
@@ -163,9 +175,9 @@ export const LogCache = ({display= true}: LogCacheProps) => {
   const observer = {
     key: '',
     callback: () => {
-      console.log("CACHE", cache.values);
-      setValue({...cache.values});
+      setValue(deepCopy(cache.values));
   }};
+  console.log("CACHE", value);
 
   useEffect(() => {
     cache.subscribeCache(observer);
