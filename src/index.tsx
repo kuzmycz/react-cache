@@ -121,6 +121,11 @@ export class CacheBag {
 }
 
 export const CacheContext = React.createContext(new CacheBag());
+export const useCacheContext = () => {
+  const cache = useContext(CacheContext);
+
+  return cache;
+};
 
 export type CacheProps = {
   values: any,
@@ -139,7 +144,7 @@ export const Cache = ({values, observers = [], children}: CacheProps) => {
 };
 
 export const useCacheValue = (key: string) => {
-  const cache = useContext(CacheContext);
+  const cache = useCacheContext();
   const [state, setState] = useState(cache && cache.get(key));
   const cacheHandler = (handlerKey: string, newValue: any) => (key === handlerKey) && setState(newValue);
   const setCache = (value: any) => cache.set(key, value);
@@ -169,7 +174,7 @@ const deepCopy = (obj: any): any => {
 };
 
 export const LogCache = ({display= true}: LogCacheProps) => {
-  const cache = useContext(CacheContext);
+  const cache = useCacheContext();
   const [value, setValue] = useState(cache.values);
 
   const observer = {
