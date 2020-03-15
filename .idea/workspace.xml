@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b3420c-8a9e-486f-a37f-560fdcc2124f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bag.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cache-bag.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cache-context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cache.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log-cache.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/use-cache-value.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/bag.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/cache-bag.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/util.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +87,7 @@
       <workItem from="1583816359792" duration="506000" />
       <workItem from="1583822471916" duration="2664000" />
       <workItem from="1584047997352" duration="311000" />
-      <workItem from="1584079291510" duration="24032000" />
+      <workItem from="1584079291510" duration="24038000" />
     </task>
     <servers />
   </component>
