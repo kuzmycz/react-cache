@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b3420c-8a9e-486f-a37f-560fdcc2124f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bag.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cache-bag.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cache-context.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cache.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log-cache.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/use-cache-value.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/bag.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/cache-bag.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/util.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/components/address/address.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/example/components/address/address.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,23 +34,41 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/example" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/example" />
       <recent name="$PROJECT_DIR$/example/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="bag.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/bag.test.ts" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.bag.test.ts" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -72,6 +97,8 @@
       <workItem from="1583714423868" duration="6770000" />
       <workItem from="1583816359792" duration="506000" />
       <workItem from="1583822471916" duration="2664000" />
+      <workItem from="1584047997352" duration="311000" />
+      <workItem from="1584079291510" duration="24032000" />
     </task>
     <servers />
   </component>
@@ -84,26 +111,38 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="626" y="-887" key="#bag.test.ts" timestamp="1584221701729">
+      <screen x="-127" y="-1152" width="2048" height="1152" />
+    </state>
+    <state x="626" y="-887" key="#bag.test.ts/-127.-1152.2048.1152/0.0.1792.1120@-127.-1152.2048.1152" timestamp="1584221701729" />
+    <state x="590" y="-766" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584190036720">
+      <screen x="-127" y="-1152" width="2048" height="1152" />
+    </state>
+    <state x="590" y="-766" key="#com.intellij.fileTypes.FileTypeChooser/-127.-1152.2048.1152/0.0.1792.1120@-127.-1152.2048.1152" timestamp="1584190036720" />
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583691844428">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583691844428" />
-    <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1583837526480">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1584047863674">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1583837526480" />
-    <state width="1771" height="318" key="GridCell.Tab.0.center" timestamp="1583837526478">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1584047863674" />
+    <state width="1771" height="318" key="GridCell.Tab.0.center" timestamp="1584047863672">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1583837526478" />
-    <state width="1771" height="318" key="GridCell.Tab.0.left" timestamp="1583837526477">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1771" height="318" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1584047863672" />
+    <state width="1771" height="318" key="GridCell.Tab.0.left" timestamp="1584047863668">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1583837526477" />
-    <state width="1771" height="318" key="GridCell.Tab.0.right" timestamp="1583837526479">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1771" height="318" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1584047863668" />
+    <state width="1771" height="318" key="GridCell.Tab.0.right" timestamp="1584047863673">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1583837526479" />
+    <state width="1771" height="318" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1584047863673" />
     <state x="603" y="277" key="RollbackChangesDialog" timestamp="1583835986988">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -112,5 +151,9 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583708221082" />
+    <state x="562" y="-893" width="670" height="676" key="search.everywhere.popup" timestamp="1584234552243">
+      <screen x="-127" y="-1152" width="2048" height="1152" />
+    </state>
+    <state x="562" y="-893" width="670" height="676" key="search.everywhere.popup/-127.-1152.2048.1152/0.0.1792.1120@-127.-1152.2048.1152" timestamp="1584234552243" />
   </component>
 </project>
