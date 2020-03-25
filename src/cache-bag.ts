@@ -65,13 +65,13 @@ export class CacheBag extends Bag {
 
     // notify key observers
     o.forEach(element => {
-      element && element(key, value);
+      element?.(key, value);
     });
 
     // notify cache observers
     this.observers.forEach(observer => {
       if (key.startsWith(observer.key || '')) {
-        observer.callback && observer.callback(key, value, this);
+        observer.callback?.(key, value, this);
       }
     });
   };
@@ -89,12 +89,11 @@ export class CacheBag extends Bag {
 
     // Global observers
     this.observers.forEach(observer => {
-      observer.callback &&
-        observer.callback(
-          observer.key,
-          observer.key === '' ? this.content : this.get(observer.key),
-          this
-        );
+      observer.callback?.(
+        observer.key,
+        observer.key === '' ? this.content : this.get(observer.key),
+        this
+      );
     });
   };
 
