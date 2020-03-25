@@ -3,11 +3,12 @@
 > Cache content and get notified when content changes
 
 [![NPM](https://img.shields.io/npm/v/react-cache.svg)](https://www.npmjs.com/package/react-cache) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![gzip size](https://badgen.net/bundlephobia/minzip/@kuzmycz/react-cache)](https://bundlephobia.com/result?p=@kuzmycz/react-cache)
 
 ## Install
 
 ```bash
-npm install --save react-cache
+npm install --save @kuzmycz/react-cache
 ```
 
 ## Usage

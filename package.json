@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.9",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
   "homepage": "https://github.com/kuzmycz/react-cache#readme",
   "module": "dist/react-cache.esm.js",
   "devDependencies": {
+    "@testing-library/react": "^10.0.1",
     "@types/jest": "^25.1.4",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
@@ -49,5 +50,6 @@
     "tsdx": "^0.13.0",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
-  }
+  },
+  "dependencies": {}
 }

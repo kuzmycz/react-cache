@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b3420c-8a9e-486f-a37f-560fdcc2124f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bag.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bag.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cache-bag.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cache-bag.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cache-context.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cache.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cache.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log-cache.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/log-cache.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/use-cache-value.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-cache-value.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/bag.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/bag.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cache-bag.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/cache-bag.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/util.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/util.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +101,11 @@
       <workItem from="1583816359792" duration="506000" />
       <workItem from="1583822471916" duration="2664000" />
       <workItem from="1584047997352" duration="311000" />
-      <workItem from="1584079291510" duration="24038000" />
+      <workItem from="1584079291510" duration="25018000" />
+      <workItem from="1584300106872" duration="232000" />
+      <workItem from="1584342354158" duration="2417000" />
+      <workItem from="1584393032619" duration="6390000" />
+      <workItem from="1584830660034" duration="2408000" />
     </task>
     <servers />
   </component>
@@ -108,10 +126,11 @@
       <screen x="-127" y="-1152" width="2048" height="1152" />
     </state>
     <state x="590" y="-766" key="#com.intellij.fileTypes.FileTypeChooser/-127.-1152.2048.1152/0.0.1792.1120@-127.-1152.2048.1152" timestamp="1584190036720" />
-    <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583691844428">
+    <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584344141953">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583691844428" />
+    <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1584344141953" />
     <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1584047863674">
       <screen x="0" y="23" width="1792" height="1026" />
     </state>
@@ -132,14 +151,23 @@
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1583837526479" />
     <state width="1771" height="318" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1584047863673" />
+    <state x="179" y="101" key="MergeDialog" timestamp="1585165259234">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="179" y="101" key="MergeDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585165259234" />
+    <state x="607" y="284" key="MultipleFileMergeDialog" timestamp="1585165259298">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="607" y="284" key="MultipleFileMergeDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585165259298" />
     <state x="603" y="277" key="RollbackChangesDialog" timestamp="1583835986988">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="603" y="277" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1583835986988" />
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583708221082">
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585165031853">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583708221082" />
+    <state x="649" y="-654" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@-127.-1152.2048.1152" timestamp="1584249544982" />
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585165031853" />
     <state x="562" y="-893" width="670" height="676" key="search.everywhere.popup" timestamp="1584234552243">
       <screen x="-127" y="-1152" width="2048" height="1152" />
     </state>

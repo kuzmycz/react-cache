@@ -1,12 +1,13 @@
-import { CacheAttributeCallback } from 'index';
 import { Bag } from './bag';
 
+export type CacheAttributeCallback = (key: string, value: any) => void;
+
 export interface ObserverMap {
-  [key: string]: CacheAttributeCallback[]
+  [key: string]: CacheAttributeCallback[];
 }
 
 export type CacheCallback = (key: string, value: any, cache: CacheBag) => void;
-export type CacheObserver = {key: string, callback: CacheCallback}
+export type CacheObserver = { key: string; callback: CacheCallback };
 
 export class CacheBag extends Bag {
   keyObservers: ObserverMap;
@@ -22,7 +23,7 @@ export class CacheBag extends Bag {
   set = (key: string = '', value: any) => {
     let [base, localKey] = this.getBase(key, true);
 
-    if(base[localKey] !== value) {
+    if (base[localKey] !== value) {
       base[localKey] = value;
 
       this.notifyObservers(key, value);
@@ -41,7 +42,7 @@ export class CacheBag extends Bag {
     let o = this.observers;
 
     if (!o.find(s => s.key === filter && s.callback === callback)) {
-      this.observers = [...o, {key: filter, callback: callback}];
+      this.observers = [...o, { key: filter, callback: callback }];
     }
   };
 
@@ -69,14 +70,13 @@ export class CacheBag extends Bag {
 
     // notify cache observers
     this.observers.forEach(observer => {
-      if(key.startsWith(observer.key || '')) {
+      if (key.startsWith(observer.key || '')) {
         observer.callback && observer.callback(key, value, this);
       }
     });
   };
 
   notifyAll = () => {
-
     // Key observers
     Object.keys(this.keyObservers).forEach(key => {
       let value = this.get(key);
@@ -89,7 +89,12 @@ export class CacheBag extends Bag {
 
     // Global observers
     this.observers.forEach(observer => {
-      observer.callback && observer.callback(observer.key, (observer.key === '') ? this.content : this.get(observer.key), this);
+      observer.callback &&
+        observer.callback(
+          observer.key,
+          observer.key === '' ? this.content : this.get(observer.key),
+          this
+        );
     });
   };
 
@@ -97,4 +102,3 @@ export class CacheBag extends Bag {
     return new CacheBag(values, observers);
   }
 }
-

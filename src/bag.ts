@@ -21,10 +21,9 @@ export class Bag {
    * @return [object, attribute]
    */
   protected getBase = (key: string, create: boolean = false): [any, string] => {
-
     const keys = key.split('.');
 
-    if(keys.length < 2) {
+    if (keys.length < 2) {
       return [this.content, keys[0]];
     } else {
       let base = this.content;
@@ -33,7 +32,7 @@ export class Bag {
         let current = base[keys[0]];
 
         if (current === undefined) {
-          if (create ) {
+          if (create) {
             current = base[keys[0]] = {};
           } else {
             return [{}, keys.pop() || ''];
@@ -44,7 +43,7 @@ export class Bag {
         keys.shift();
       }
 
-      return([base, keys[0]]);
+      return [base, keys[0]];
     }
   };
 
