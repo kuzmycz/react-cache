@@ -42,7 +42,7 @@ export class CacheBag extends Bag {
     const o = this.observers;
 
     if (!o.find(s => s.key === filter && s.callback === callback)) {
-      this.observers = [...o, { key: filter, callback: callback }];
+      this.observers = [...o, { key: filter, callback }];
     }
   };
 
@@ -79,8 +79,8 @@ export class CacheBag extends Bag {
   notifyAll = () => {
     // Key observers
     Object.keys(this.keyObservers).forEach(key => {
-      let value = this.get(key);
-      let observers = this.keyObservers[key];
+      const value = this.get(key);
+      const observers = this.keyObservers[key];
 
       observers.forEach(observer => {
         observer(key, value);
