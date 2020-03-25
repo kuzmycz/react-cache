@@ -21,7 +21,7 @@ export class CacheBag extends Bag {
   }
 
   set = (key: string = '', value: any) => {
-    let [base, localKey] = this.getBase(key, true);
+    const [base, localKey] = this.getBase(key, true);
 
     if (base[localKey] !== value) {
       base[localKey] = value;
@@ -31,7 +31,7 @@ export class CacheBag extends Bag {
   };
 
   subscribe = (key: string = '', callback: CacheAttributeCallback) => {
-    let o = this.keyObservers[key] || [];
+    const o = this.keyObservers[key] || [];
 
     if (!o.includes(callback)) {
       this.keyObservers[key] = [...o, callback];
@@ -39,7 +39,7 @@ export class CacheBag extends Bag {
   };
 
   subscribeCache = (filter: string = '', callback: CacheCallback) => {
-    let o = this.observers;
+    const o = this.observers;
 
     if (!o.find(s => s.key === filter && s.callback === callback)) {
       this.observers = [...o, { key: filter, callback: callback }];
@@ -47,7 +47,7 @@ export class CacheBag extends Bag {
   };
 
   unsubscribe = (key: string = '', callback: CacheAttributeCallback) => {
-    let o = this.keyObservers[key] || [];
+    const o = this.keyObservers[key] || [];
 
     if (o.includes(callback)) {
       this.keyObservers[key] = o.filter(i => i !== callback);
@@ -55,13 +55,13 @@ export class CacheBag extends Bag {
   };
 
   unsubscribeCache = (filter: string = '', callback: CacheCallback) => {
-    let o = this.observers;
+    const o = this.observers;
 
     this.observers = o.filter(i => i.key !== filter && i.callback !== callback);
   };
 
   notifyObservers = (key: string = '', value: any) => {
-    let o = this.keyObservers[key] || [];
+    const o = this.keyObservers[key] || [];
 
     // notify key observers
     o.forEach(element => {
