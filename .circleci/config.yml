@@ -12,18 +12,20 @@ jobs:
 
       - run: ls -l
 
-#      - restore_cache:
-#          keys:
-#            - v1-yarn-deps-{{ checksum "package.json" }}
-#            - v1-yarn-deps-
+      - restore_cache:
+          keys:
+            - v1-yarn-deps-{{ checksum "package.json" }}
+            - v1-yarn-deps-
 
 
       - run: yarn
 
-#      - save_cache:
-#        key: v1-yarn-deps-{{ checksum "package.json" }}
-#        paths:
-#           - node_modules
+      - run: ls -l
+
+      - save_cache:
+        key: v1-yarn-deps-{{ checksum "package.json" }}
+        paths:
+           - node_modules
       - run:
           name: "Running tests"
           command: yarn test
