@@ -54,15 +54,15 @@ workflows:
   build-and-publish:
     # Run the welcome/run job in its own container
     jobs:
-      - build:
-          filters:
-            tags:
-              only: /.*/
+#      - build:
+#          filters:
+#            tags:
+#              only: /.*/
       - publish:
-          requires:
-            -build
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v.*/
+#          requires:
+#            -build
+#          filters:
+#            branches:
+#              ignore: /.*/
+#            tags:
+#              only: /^v.*/
