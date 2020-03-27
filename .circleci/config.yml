@@ -10,7 +10,7 @@ jobs:
       - node/install:
           install-yarn: true
           node-version: latest
-      - test: yarn test
+      - run: yarn test
 
 orbs:
   node: circleci/node@2.0.0
