@@ -14,7 +14,8 @@ jobs:
 #          - v1-dependencies-{{ checksum "package.json" }}
 #          - v1-dependencies-
 
-      - run: npm install
+
+      - run: yarn
       - run: echo "Done"
 
 #      - save_cache:
