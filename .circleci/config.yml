@@ -9,6 +9,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+
       - restore_cache:
         keys:
           - v1-yarn-deps-{{ checksum "package.json" }}
@@ -24,6 +25,7 @@ jobs:
       - run:
           name: "Running tests"
           command: yarn test
+
       - run: echo "Done"
 
 #      - save_cache:
