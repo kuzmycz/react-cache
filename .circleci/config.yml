@@ -50,8 +50,9 @@ jobs:
     working_directory: ~/repo
     steps:
       - run: echo "Hello world"
-#      - attach_workspace:
-#        at: ~/repo
+      - attach_workspace:
+          at: ~/repo
+      - run: ls -l
 #      - run:
 #        name: Authenticate with NPM
 #        command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
@@ -69,9 +70,9 @@ workflows:
 #          filters:
 #            tags:
 #              only: /.*/
-#      - deploy:
-#          requires:
- #           -build
+      - deploy:
+          requires:
+              - build
 #          filters:
 #            branches:
 #              ignore: /.*/
