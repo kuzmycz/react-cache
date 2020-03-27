@@ -22,6 +22,7 @@ jobs:
 
       - run: ls -l
 
+      - run: du .
 
       - save_cache:
            key: v1-yarn-deps-{{ checksum "package.json" }}
