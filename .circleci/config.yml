@@ -33,29 +33,21 @@ jobs:
           name: "Running tests"
           command: yarn test
 
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+
       - run: echo "Done"
-
-#      - save_cache:
-#        paths:
-#          - node_modules
-#        key: v1-dependencies-{{ checksum "package.json" }}
-
-      # run tests!
-#      - run: npm test
 
       # store test results
 #      - store_test_results:
 #          path: test_results
 
       # store code coverage
-#      - persist_to_workspace:
-#          root: ~/repo
-#          paths: .
   deploy:
     docker:
       - image: circleci/node:latest
     working_directory: ~/repo
-
     steps:
       - run: echo "Hello world"
 #      - attach_workspace:
