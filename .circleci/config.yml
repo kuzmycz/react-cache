@@ -58,9 +58,9 @@ workflows:
 #          filters:
 #            tags:
 #              only: /.*/
-      - deploy
-#          requires:
-#            -build
+      - deploy:
+          requires:
+            -build
 #          filters:
 #            branches:
 #              ignore: /.*/
