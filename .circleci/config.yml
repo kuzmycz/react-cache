@@ -15,6 +15,7 @@ jobs:
 #          - v1-dependencies-
 
       - run: npm install
+      - run: echo "Done"
 
 #      - save_cache:
 #        paths:
@@ -54,13 +55,13 @@ workflows:
   build-and-publish:
     # Run the welcome/run job in its own container
     jobs:
-#      - build:
+      - build
 #          filters:
 #            tags:
 #              only: /.*/
-      - deploy:
-          requires:
-            -build
+#      - deploy:
+#          requires:
+ #           -build
 #          filters:
 #            branches:
 #              ignore: /.*/

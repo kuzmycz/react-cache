@@ -99,7 +99,7 @@
       <workItem from="1584393032619" duration="6390000" />
       <workItem from="1584830660034" duration="4335000" />
       <workItem from="1585218678197" duration="36000" />
-      <workItem from="1585343754914" duration="4304000" />
+      <workItem from="1585343754914" duration="4481000" />
     </task>
     <task id="LOCAL-00001" summary="Adding node to ci">
       <created>1585344239221</created>
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585348488556</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="debugging">
+      <created>1585348571328</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585348571328</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,10 +238,10 @@
     </state>
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583691844428" />
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1584344141953" />
-    <state x="435" y="163" key="CommitChangelistDialog2" timestamp="1585348485987">
+    <state x="435" y="163" key="CommitChangelistDialog2" timestamp="1585348568380">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="435" y="163" key="CommitChangelistDialog2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585348485987" />
+    <state x="435" y="163" key="CommitChangelistDialog2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585348568380" />
     <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1585216783191">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -267,15 +274,15 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="603" y="277" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1583835986988" />
-    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585348495314">
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585348819779">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585348495314" />
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585343760950">
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585348819779" />
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585348741663">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="649" y="-654" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@-127.-1152.2048.1152" timestamp="1584249544982" />
-    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585343760950" />
+    <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585348741663" />
     <state x="562" y="-893" width="670" height="676" key="search.everywhere.popup" timestamp="1584234552243">
       <screen x="-127" y="-1152" width="2048" height="1152" />
     </state>
