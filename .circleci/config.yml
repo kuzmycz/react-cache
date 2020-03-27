@@ -10,10 +10,12 @@ jobs:
     steps:
       - checkout
 
+      - run: ls -l
+
       - restore_cache:
-        keys:
-          - v1-yarn-deps-{{ checksum "package.json" }}
-          - v1-yarn-deps-
+          keys:
+            - v1-yarn-deps-{{ checksum "package.json" }}
+            - v1-yarn-deps-
 
 
       - run: yarn
