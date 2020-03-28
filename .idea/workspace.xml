@@ -99,7 +99,7 @@
       <workItem from="1584393032619" duration="6390000" />
       <workItem from="1584830660034" duration="4335000" />
       <workItem from="1585218678197" duration="36000" />
-      <workItem from="1585343754914" duration="9949000" />
+      <workItem from="1585343754914" duration="10036000" />
     </task>
     <task id="LOCAL-00001" summary="Adding node to ci">
       <created>1585344239221</created>
@@ -311,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585353873143</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adding caching">
+      <created>1585366268999</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1585366268999</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,11 +351,11 @@
     </state>
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583691844428" />
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1584344141953" />
-    <state x="435" y="163" key="CommitChangelistDialog2" timestamp="1585353870574">
+    <state x="435" y="163" key="CommitChangelistDialog2" timestamp="1585366265506">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="435" y="163" key="CommitChangelistDialog2/-127.-1129.2048.1129/0.0.1792.1120@0.0.1792.1120" timestamp="1585352395266" />
-    <state x="435" y="163" key="CommitChangelistDialog2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585353870574" />
+    <state x="435" y="163" key="CommitChangelistDialog2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585366265506" />
     <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1585216783191">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -381,11 +388,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="603" y="277" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1583835986988" />
-    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585353886047">
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585366278656">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1129.2048.1129/0.0.1792.1120@0.0.1792.1120" timestamp="1585352404575" />
-    <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585353886047" />
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585366278656" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585353343894">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
