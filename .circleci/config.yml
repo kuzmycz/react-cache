@@ -53,12 +53,12 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run: ls -l
-#      - run:
-#        name: Authenticate with NPM
-#        command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
-#      - run:
-#        name: Publish package
-#        command: npm publish --access public
+      - run:
+          name: Authenticate with NPM
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+      - run:
+          name: Publish package
+          command: npm publish --access public
 
 workflows:
   # Name the workflow "welcome"
