@@ -1,10 +1,11 @@
-import { deepCopy } from '../src/util';
 import { CacheBag } from '../src/cache-bag';
+// @ts-ignore
+import deepcopy from 'deepcopy';
 
 describe('Basic Bag tests', () => {
   test('Cache Bag Creation', () => {
     const values = { name: 'Clark Kent', gender: 'male', hero: 'Superman' };
-    const initial = deepCopy(values);
+    const initial = deepcopy(values);
 
     const bag = CacheBag.of(values);
     expect(bag).toBeDefined();

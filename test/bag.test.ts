@@ -1,5 +1,6 @@
 import { Bag } from '../src/bag';
-import { deepCopy } from '../src/util';
+// @ts-ignore
+import deepcopy from 'deepcopy';
 
 describe('Create Bag', () => {
   test('Create a bag of values', () => {
@@ -12,7 +13,7 @@ describe('Create Bag', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
 
     const bag = Bag.of(values);
 
@@ -137,7 +138,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Daisey Duck';
 
@@ -158,7 +159,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Duck Plains';
     const key = 'address.city';
@@ -180,7 +181,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Male';
     const key = 'gender';
@@ -202,7 +203,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Above Average';
     const key = 'profile.personality.humor';
@@ -224,7 +225,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Invalid';
     const key = (undefined as unknown) as string;
@@ -245,7 +246,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Invalid';
     const key = '.';
@@ -271,7 +272,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = 'Invalid';
     const key = '.....';
@@ -297,7 +298,7 @@ describe('Set Bag Items', () => {
         zip: '01702',
       },
     };
-    const initialContent = deepCopy(values);
+    const initialContent = deepcopy(values);
     const bag = Bag.of(values);
     const item = '100';
     const key = 'profile.strange key.age';
