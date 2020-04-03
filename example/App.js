@@ -1,6 +1,6 @@
 import React  from 'react'
 
-import {Cache, LogCache} from "../dist";
+import {Cache} from "../dist";
 import Address from './components/address/address.component'
 
 const App = () => {
@@ -10,7 +10,6 @@ const App = () => {
       <div>Test</div>
       <Cache values={{}}>
         <Address name={'buyer'}/>
-        <LogCache display={false}/>
       </Cache>
     </div>
   )

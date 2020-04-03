@@ -24,7 +24,6 @@ const App = () => {
       <div>Test</div>
       <Cache values={{}}>
         <Address name={'buyer'}/>
-        <LogCache display={false}/>
       </Cache>
     </div>
   )
