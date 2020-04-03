@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91b3420c-8a9e-486f-a37f-560fdcc2124f" name="Default Changelist" comment="">
+    <list default="true" id="91b3420c-8a9e-486f-a37f-560fdcc2124f" name="Default Changelist" comment="Removing the use of log-cache.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,7 @@
       <workItem from="1585218678197" duration="36000" />
       <workItem from="1585343754914" duration="11142000" />
       <workItem from="1585373300272" duration="1610000" />
-      <workItem from="1585942511724" duration="1713000" />
+      <workItem from="1585942511724" duration="2821000" />
     </task>
     <task id="LOCAL-00001" summary="Adding node to ci">
       <created>1585344239221</created>
@@ -354,7 +351,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585944891030</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Removing the use of log-cache.">
+      <created>1585945189648</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1585945189648</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Removing the use of log-cache.">
+      <created>1585945382604</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1585945382604</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +384,8 @@
     <MESSAGE value="Adding caching" />
     <MESSAGE value="Uping version to 1.0.11" />
     <MESSAGE value="Moving log-cache to a separate package." />
-    <option name="LAST_COMMIT_MESSAGE" value="Moving log-cache to a separate package." />
+    <MESSAGE value="Removing the use of log-cache." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing the use of log-cache." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="-887" key="#bag.test.ts" timestamp="1584221701729">
@@ -389,11 +401,11 @@
     </state>
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1583691844428" />
     <state x="634" y="315" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1584344141953" />
-    <state x="435" y="163" key="CommitChangelistDialog2" timestamp="1585945186692">
+    <state x="435" y="163" key="CommitChangelistDialog2" timestamp="1585945405434">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="435" y="163" key="CommitChangelistDialog2/-127.-1129.2048.1129/0.0.1792.1120@0.0.1792.1120" timestamp="1585352395266" />
-    <state x="435" y="163" key="CommitChangelistDialog2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585945186692" />
+    <state x="435" y="163" key="CommitChangelistDialog2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585945405434" />
     <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1585216783191">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -426,11 +438,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="603" y="277" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1583835986988" />
-    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585945231548">
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585945420595">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1129.2048.1129/0.0.1792.1120@0.0.1792.1120" timestamp="1585352404575" />
-    <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585945231548" />
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2/-127.-1152.2048.1152/0.0.1792.1120@0.0.1792.1120" timestamp="1585945420595" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585944829811">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
