@@ -31,7 +31,7 @@ export class Bag {
       while (keys.length > 1) {
         let current = base[keys[0]];
 
-        if (current === undefined) {
+        if (current === undefined || current === null) {
           if (create) {
             current = base[keys[0]] = {};
           } else {
