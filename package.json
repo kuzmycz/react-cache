@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -8,14 +8,20 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -39,18 +45,27 @@
   },
   "homepage": "https://github.com/kuzmycz/react-cache#readme",
   "module": "dist/react-cache.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-cache.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-cache.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "devDependencies": {
-    "@testing-library/react": "^10.0.1",
-    "@types/jest": "^25.1.4",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "deepcopy": "^2.0.0",
-    "husky": "^4.2.3",
+    "@size-limit/preset-small-lib": "^4.10.2",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "husky": "^6.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "size-limit": "^4.10.2",
     "tsdx": "^0.14.1",
-    "tslib": "^2.0.0",
-    "typescript": "^3.8.3"
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   },
   "dependencies": {}
 }

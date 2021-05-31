@@ -1,14 +1,19 @@
 import React from 'react'
-import { useCacheValue } from "../../../dist";
+import { useCacheValue } from "../../dist";
 
-const Address = ({name}) => {
-  const [street, setStreet] = useCacheValue(`${name}.street`)
-  const [city, setCity] = useCacheValue(`${name}.city`)
-  const [state, setState] = useCacheValue(`${name}.state`)
-  const [country, setCountry] = useCacheValue(`${name}.country`)
-  const [postcode, setPostcode] = useCacheValue(`${name}.postcode`)
+const Address = ({value}) => {
+  const [street, setStreet] = useCacheValue(`${value}.street`)
+  const [city, setCity] = useCacheValue(`${value}.city`)
+  const [state, setState] = useCacheValue(`${value}.state`)
+  const [country, setCountry] = useCacheValue(`${value}.country`)
+  const [postcode, setPostcode] = useCacheValue(`${value}.postcode`)
+  const [name, setName] = useCacheValue(`name`)
 
   return (<div>
+    <label>
+      Street:
+      <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
+    </label>
     <label>
       Street:
       <input type='text' value={street} onChange={(e) => setStreet(e.target.value)} />

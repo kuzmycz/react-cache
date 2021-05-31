@@ -1,23 +1,27 @@
-import * as React from 'react';
-import { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 
 import { CacheBag, CacheObserver } from './cache-bag';
 
 export type CacheProps = {
   values: any;
-  observers: CacheObserver[];
+  name?: string;
+  observers?: CacheObserver[];
   children: React.ReactNode;
 };
 
 export const Cache = ({ values, observers = [], children }: CacheProps) => {
-  const bag = new CacheBag(values, observers);
 
-  return <CacheContext.Provider value={bag}>{children}</CacheContext.Provider>;
+  const ref = useRef<CacheBag>();
+
+  if (ref.current !== undefined || ref.current !== null) {
+    ref.current = new CacheBag(values, observers);
+  }
+
+  return <CacheContext.Provider value={ref.current}>{children}</CacheContext.Provider>;
 };
 
-export const CacheContext = React.createContext(new CacheBag());
+export const CacheContext = React.createContext(new CacheBag({name: 'Default Cache'}));
 export const useCacheContext = () => {
   const cache = useContext(CacheContext);
-
   return cache;
 };
