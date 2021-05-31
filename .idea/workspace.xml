@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91b3420c-8a9e-486f-a37f-560fdcc2124f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cache.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cache.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,7 @@
       <workItem from="1618495566336" duration="999000" />
       <workItem from="1618780630950" duration="335000" />
       <workItem from="1618785529573" duration="2932000" />
-      <workItem from="1622455799661" duration="3034000" />
+      <workItem from="1622455799661" duration="5885000" />
     </task>
     <task id="LOCAL-00001" summary="Adding node to ci">
       <created>1585344239221</created>
@@ -399,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622462684893</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Correction to tests">
+      <created>1622464758093</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1622464758093</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
