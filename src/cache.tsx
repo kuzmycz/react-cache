@@ -12,9 +12,11 @@ export type CacheProps = {
 export const Cache = ({ values, observers = [], children }: CacheProps) => {
 
   const ref = useRef<CacheBag>();
+  console.log("Cache Creation: ", ref, ref && ref.current);
 
   if (ref.current !== undefined || ref.current !== null) {
     ref.current = new CacheBag(values, observers);
+    console.log("Cache Creation: Bag created", ref && ref.current);
   }
 
   return <CacheContext.Provider value={ref.current}>{children}</CacheContext.Provider>;
