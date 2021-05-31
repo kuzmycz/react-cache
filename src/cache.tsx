@@ -15,7 +15,7 @@ export const Cache = ({ values, namedStore, observers = [], children }: CachePro
   const ref = useRef<CacheBag>();
   console.log("Cache Creation: ", ref, ref && ref.current);
 
-  if (ref.current !== undefined || ref.current !== null) {
+  if (ref.current === undefined || ref.current === null) {
     if (!!namedStore) {
       let global: any = window;
       if (!global[namedStore]) {
